@@ -1,0 +1,27 @@
+.transaction-history {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  background-color: #fff;
+  padding: 15px;
+  margin: 0 auto 20px;
+}
+.head {
+  background-color: gray;
+  border: 1px solid black;
+}
+.row-head {
+  width: 115px;
+  padding: 5px 10px;
+}
+.table-data {
+  width: 115px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.table-row:nth-child(odd) {
+  background-color: rgb(177, 177, 177);
+}
