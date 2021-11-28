@@ -5,7 +5,7 @@ import s from './TransactionHistory.module.css';
 export default function TransactionHistory({ transactions }) {
   return (
     <table className={s['transaction-history']}>
-      <thead className={s['head']}>
+      <thead className={s.head}>
         <tr>
           <th className={s['row-head']}>Type</th>
           <th className={s['row-head']}>Amount</th>
@@ -18,5 +18,5 @@ export default function TransactionHistory({ transactions }) {
   );
 }
 TransactionHistory.prototype = {
-  transactions: PropTypes.array.isRequired,
+  transactions: PropTypes.arrayOf(PropTypes.shape().isRequired).isRequired,
 };

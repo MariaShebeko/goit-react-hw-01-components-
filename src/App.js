@@ -6,6 +6,7 @@ import user from './data/user.json';
 import stats from './data/statistics.json';
 import friends from './data/friends.json';
 import transactions from './data/transactions.json';
+import colors from './data/colors.json';
 
 export default function App() {
   return (
@@ -17,7 +18,7 @@ export default function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title={'Upload stats'} items={stats} />
+      <Statistics title={'Upload stats'} items={stats} colors={colors} />
       <FriendList friends={friends} />,
       <TransactionHistory transactions={transactions} />,
     </div>

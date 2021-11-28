@@ -6,5 +6,5 @@ export default function FriendList({ friends }) {
   return <ul className={s['friend-list']}>{friends.map(FriendListItem)}</ul>;
 }
 FriendList.prototype = {
-  friends: PropTypes.array.isRequired,
+  friends: PropTypes.arrayOf(PropTypes.shape().isRequired).isRequired,
 };
